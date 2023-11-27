@@ -256,7 +256,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun updateSeekbarUI(noUpdateProgress: Boolean = false) {
-        binding.tv1.text = "最小沉默时间：${minSilenceTime}秒"
+        binding.tv1.text = "最大沉默时间：${minSilenceTime}秒"
         binding.tv2.text = "激活分贝：${activateDB}DB"
         if (!noUpdateProgress) {
             binding.seekBar1.progress = minSilenceTime - range1.first
